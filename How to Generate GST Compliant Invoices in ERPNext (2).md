@@ -60,8 +60,8 @@ This is a tricky situation. In simple entry based accounting softwares like Busy
         Note: You may have to delete any Documents linked further to Sales Invoice. The system will automatically unlink the   Payment Entry linked to the invoice if any, make sure you have noted down the Payment Entry number to relink the new invoice.
         1. **Update** the Sequence Number from Naming Series to one less than the cancelled invoice number [11-1=10 in our case].
     1. **Create:** Create a new Sales Invoice with correct details, double check the details and Submit the invoice. This will create an invoice with the same serial number “ABC-2020-00011”
-    This method is to be used carefully and might not be practical everytime.
+This method is to be used carefully and might not be practical everytime.
 
 ## Future Release of ERPNext
 
-With v13 ERPNext will be moving to _Immutable Ledger _where Cancellation of Accounting Entries will not be possible, only reversing the entries will be possible. This release will solve the Cancellation and Amendment issues but will require users to be very careful while making entries.
+With v13 ERPNext will be moving to **Immutable Ledger** where Cancellation of Accounting Entries will not be possible, only reversing the entries will be possible. This release will solve the Cancellation and Amendment issues but will require users to be very careful while making entries.
