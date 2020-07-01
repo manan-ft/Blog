@@ -51,15 +51,15 @@ Instead of having ACC-SINV-.YYYY.-#####, have a Naming series like ABC-.YYYY.-##
 
 ## Corrective Action for Mistakes in Sales Invoice
 
-This is a tricky situation. In simple entry based accounting softwares like Busy or Tally one can change the Invoice details even at a later stage, whereas in ERPNext, you cannot change details of a Submitted Sales Invoice if you make any mistake. In order to correct a mistake on Submitted Sales Invoice, one has the following options since Cancellation and Amendment creates problems stated above;
-        1. **Credit Note:** Create a Credit Note of the Sales Invoice in question and create a new Sales Invoice with correct details. This will make sure that the wrong Sales Invoice is nullified and the new Sales Invoice is generated as per the running Invoice Serial Number
-        1. **Cancel/Delete/Create:** Sometimes creating a Credit Note might not be practically possible and you might want to just amend the existing Sales Invoice without creating a new Invoice number. In such cases, you will have to first stop all the Invoice transactions or perform this task when the transactions are closed.
-            1. **Cancel:**Cancel the wrong invoice and take a print/copy of the cancelled invoice. Let us consider the Invoice cancelled is ABC-2020-00011
-            1. **Delete:**
-                1. Delete the Cancelled invoice. Note: You may have to delete any Documents linked further to Sales Invoice. The system will automatically unlink the Payment Entry linked to the invoice if any, make sure you have noted down the Payment Entry number to relink the new invoice.
-                1. Update the Sequence Number from Naming Series to one less than the cancelled invoice number [11-1=10 in our case].
-            1. **Create:** Create a new Sales Invoice with correct details, double check the details and Submit the invoice. This will create an invoice with the same serial number “ABC-2020-00011”
-            This method is to be used carefully and might not be practical everytime.
+This is a tricky situation. In simple entry based accounting softwares like Busy or Tally one can change the Invoice details even at a later stage, whereas in ERPNext, you cannot change details of a Submitted Sales Invoice if you make any mistake. In order to correct a mistake on Submitted Sales Invoice, one has the following options (since Cancellation and Amendment creates problems stated above);
+1. **Credit Note:** Create a Credit Note of the Sales Invoice in question and create a new Sales Invoice with correct details. This will make sure that the wrong Sales Invoice is nullified and the new Sales Invoice is generated as per the running Invoice Serial Number
+1. **Cancel/Delete/Create:** Sometimes creating a Credit Note might not be practically possible and you might want to just amend the existing Sales Invoice without creating a new Invoice number. In such cases, you will have to first stop all the Invoice transactions or perform this task when the transactions are closed.
+    1. **Cancel:** Cancel the wrong invoice and take a print/copy of the cancelled invoice. Let us consider the Invoice cancelled is ABC-2020-00011
+    1. **Delete:** 
+        1. Delete the Cancelled invoice. Note: You may have to delete any Documents linked further to Sales Invoice. The system will automatically unlink the   Payment Entry linked to the invoice if any, make sure you have noted down the Payment Entry number to relink the new invoice.
+        1. Update the Sequence Number from Naming Series to one less than the cancelled invoice number [11-1=10 in our case].
+        1. **Create:** Create a new Sales Invoice with correct details, double check the details and Submit the invoice. This will create an invoice with the same serial number “ABC-2020-00011”
+    This method is to be used carefully and might not be practical everytime.
 
 ## Future Release of ERPNext*
 
