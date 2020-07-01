@@ -17,6 +17,8 @@ As per **_Rule 46(b) of  Central Goods and Services Tax (CGST) Rules, 2017 Part 
 
 ## Implications of Non-Compliance
 
+<p align="center">
+    <img src="./hammer-620011_1920.jpg" width="186" height="141"/ > 
 
 1. **Legal Implications:** If the serial number is not consecutive, with a few serial numbers missing, it can be construed as certain serial numbers where skipped and the skipped invoices were unbilled to save on tax. These can have serious legal implications in the form of Noticies and penalties.
 1. **Validation errors on GST Portal:** If the invoice number is longer than 16 digits, it will not be accepted on the GST portal for creation of E-way Bill and during filing of GST Returns. Once an invoice is generated and sent to Customer, changing the invoice number becomes cumbersome, even if you want to
