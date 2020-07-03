@@ -52,7 +52,7 @@ We will be considering importing data into Busy from ERPNext. Principles for doi
 
     This exported XLXS/CSV file is ready to be imported into your Legacy Software making sure your data in both the softwares is in sync.
     
-## Other Tips from our Experience of Data Migration
+## Other Tips 
 Following are some of the learnings from our Experience:
 1. **Taxes:** Make sure the correct rates are exported. Check your script and output to check if you have factored for Items that may have Rates which are tax inclusive and otherwise. For example, if you are considering taxes to be included in Rates in ERPNext, make sure you have factored that in while exporting the data and correct rates are being exported and imported. If your Rate for an Item is Rs.100 and it includes a GST of 18%, you should consider this an define the correct taxes on the export file otherwise your legacy system will consider GST on top of your Rate i.e Rs.100.
 1. **Discount:** You need to export the Discount information as well. Make sure the Discount information is exported correctly and applied the same way in Legacy Software as well. For example, by default Busy had difficulty considering Discount at Invoice level since the Discount at invoice level was applied but Taxes were not recalculated like in ERPNext. To handle this exception, we calculated % Discount line item-wise and exported this information line item-wise.
@@ -62,10 +62,10 @@ Following are some of the learnings from our Experience:
 ## List of Transactions to be exported
 
 Finally, once you have completed the export format for one document, you will have to repeat the whole process to include the following transactions to export the complete Accounting Data
-1. Sales Data: Sales Invoice and Sales Return
-1. Purchase Data: Purchase Invoice and Purchase Return
-1. Journal Vouchers: Journal Entries including Contra, Credit Notes and Debit Notes
-1. Payment and Receipt Data: Payment Entry
+1. **Sales Data:** Sales Invoice and Sales Return
+1. **Purchase Data:** Purchase Invoice and Purchase Return
+1. **Journal Vouchers:** Journal Entries including Contra, Credit Notes and Debit Notes
+1. **Payment and Receipt Data:** Payment Entry
 
 We hope this blog gives you confidence in using ERPNext for you organisation and does not stop you from adapting it because your C.A does not want to use ERPnext!
 
