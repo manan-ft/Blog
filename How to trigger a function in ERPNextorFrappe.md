@@ -8,6 +8,7 @@ For example
 `bench --site staging execute frappe.email.doctype.auto_email_report.auto_email_report.send_daily`
 
 In this `frappe.email.doctype.auto_email_report.auto_email_report` is path on Github, replace `/` with `.`
+# Do not write `.py` for the py file
 Last part `send_daily` is function name
 
 
