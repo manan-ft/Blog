@@ -97,3 +97,5 @@ var dashboard_link = function (frm, doctype){
 };
 
 ```
+
+Credit: Rishikesh Samantra via https://gist.github.com/rsqwerty/49809a40e7edfd09ce4776159f9c2891
