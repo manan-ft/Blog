@@ -1,5 +1,7 @@
 ## How to Whitelist IP in fail2ban
 
+[Detailed Description of how fail2ban works](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)
+
 **Symptoms**
 
 1. Only some user(s) are not able to access the ERPNext instance, while others can
