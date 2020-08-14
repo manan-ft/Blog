@@ -41,3 +41,9 @@ Failure regex in following file /etc/fail2ban/filter.d/nginx-http-auth.conf
 is banning the IP because of following entry in the log `sudo zgrep '103.82.158.98' /var/log/nginx/error.log`
 
 `2020/08/13 14:38:28 [warn] 889#889: *721820 a client request body is buffered to a temporary file /var/lib/nginx/body/0000004311, client: 103.82.158.98, server: staging, request: "POST /api/method/upload_file HTTP/1.1", host: "erp.videohms.in", referrer: "https://erp.videohms.in/desk"`
+
+It seems that a Client Request Body is buffered to a temp file by Nginx on loading the Desk, this warning is black listed by fail2ban regex
+
+[Possible Solution:increase 
+client_body_buffer_size 1M;
+    client_max_body_size 1M;](https://serverfault.com/a/733742)
