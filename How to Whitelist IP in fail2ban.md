@@ -29,6 +29,7 @@ ignoreip = 127.0.0.1/8 192.168.0.1 8.8.8.8
 
 4. Switch user to frappe and Restart fail2ban `service fail2ban restart`
 
+### Long Term Fix
 
 **Reason for failure**
 
