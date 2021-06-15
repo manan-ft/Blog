@@ -48,3 +48,6 @@ It seems that a Client Request Body is buffered to a temp file by Nginx on loadi
 [Possible Solution:increase 
 client_body_buffer_size 1M;
     client_max_body_size 1M;](https://serverfault.com/a/733742)
+    
+    
+[Using Dynamic DNS Service](https://discuss.erpnext.com/t/instance-refuses-ip-address-at-intervals/38850/6?u=manan_shah)
