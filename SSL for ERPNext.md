@@ -14,8 +14,7 @@ following steps
 
 1. `sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt`
 1. `cd /opt/letsencrypt`
-1. `sudo -H ./letsencrypt-auto certonly --standalone -d example.com -d
-www.example.com`
+1. `sudo certbot --nginx -d your_domain -d your_domain`
     1. Make sure to replace `example.com` with valid domain-subdomain you want
 1. This will generate following important files
     1. Private Key: `/etc/letsencrypt/live/example.com/privkey.pem`
