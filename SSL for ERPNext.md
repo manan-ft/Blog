@@ -1,6 +1,6 @@
 # SSL Setup for ERPNext
 
-##Point Sub Domain to Instance IP Address
+## Point Sub Domain to Instance IP Address
 1. Take the IP Address of the instance, let us say it is http://167.71.237.6/
 2. Login to the Domain Service providers Login like GoDaddy or BigRock
 3. Go to Manage Domain and add A Record for the SubDomain
