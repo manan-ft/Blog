@@ -1,5 +1,12 @@
 # SSL Setup for ERPNext
 
+##Point Sub Domain to Instance IP Address
+1. Take the IP Address of the instance, let us say it is http://167.71.237.6/
+2. Login to the Domain Service providers Login like GoDaddy or BigRock
+3. Go to Manage Domain and add A Record for the SubDomain
+4. Type = A, Host=`erp` (or any sub-domain that you want to use like erpnext.harnaamzippers.com), Points to=`IP Address mentioned in Step 1`, TTL=`Custom`,`600` and Save the A Record
+5. Once the Mapping is done, after 2-5 mins, check from the Browser if the new subdomain is redirecting to the original IP. For example `erpnext.harnaamzippers.com` should redirect to the ERPNext instance's IP without any issues.
+
 To get SSL working you need two things
 
 1. Private Key
@@ -12,10 +19,9 @@ Key thing to do before is ensure that Nginx is stopped.
 Use `sudo /etc/init.d/nginx stop` to turnoff Nginx. Perform
 following steps
 
-1. `sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt`
-1. `cd /opt/letsencrypt`
-1. `sudo certbot --nginx -d your_domain -d your_domain`
-    1. Make sure to replace `example.com` with valid domain-subdomain you want
+1. `sudo apt install certbot`
+1. `sudo certbot certonly --standalone -d erpnext.harnaamzippers.com`
+    1. Make sure to replace `erpnext.harnaamzippers.com` with valid domain-subdomain you want
 1. This will generate following important files
     1. Private Key: `/etc/letsencrypt/live/example.com/privkey.pem`
     1. Chained Certificate: `/etc/letsencrypt/live/example.com/fullchain.pem`
