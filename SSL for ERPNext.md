@@ -66,3 +66,7 @@ following changes to Nginx `nginx.conf` file
     sudo -H ./letsencrypt-auto certonly --standalone --renew-by-default -d gtlerp.globaltradelinks.biz
     sudo /etc/init.d/nginx start
 ```
+
+## Other Prerequisite
+
+Add `"host_name": "https://erpnext.harnaamzippers.com",` to site_config.json in path `~/frappe-bench/sites/<site-name>`
