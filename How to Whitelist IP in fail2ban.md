@@ -13,6 +13,14 @@ fail2ban Bans certain IP temporarily for security reasons, need to whitelist the
 
 **Solution**
 
+*Short-Solution*
+
+Run this command after SSHing to the instance
+
+`sudo fail2ban-client set nginx-proxy addignoreip <your-ipv4-here>`
+
+*Longer-Version*
+
 1. Find the IP of the user: Login via Admin ID to ERPNext instance > Go to User List > look for value in last_ip
 1. Check if this IP was banned by fail to ban by running this command `sudo zgrep 'Ban' /var/log/fail2ban.log`
 1. Whitelist the IP by adding this IP in `nano  /etc/fail2ban/jail.conf` , you will need to login as root to make changes to this file
