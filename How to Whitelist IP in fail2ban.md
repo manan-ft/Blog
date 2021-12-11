@@ -17,7 +17,7 @@ fail2ban Bans certain IP temporarily for security reasons, need to whitelist the
 
 Run this command after SSHing to the instance
 
-`sudo fail2ban-client set nginx-proxy addignoreip <your-ipv4-here>`
+`sudo fail2ban-client set nginx-proxy unbanip <your-ipv4-here>`
 
 *Longer-Version*
 
