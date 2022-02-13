@@ -66,6 +66,13 @@ following changes to Nginx `nginx.conf` file
     sudo -H ./letsencrypt-auto certonly --standalone --renew-by-default -d gtlerp.globaltradelinks.biz
     sudo /etc/init.d/nginx start
 ```
+## New Steps to Renew SSL
+
+# Steps to Migrate
+1. Ubuntu 18 and 20 comes with snap pre-installed, no steps required to install snap or snapd
+2. Remove deprecated certbot using this [link](https://certbot.eff.org/instructions?ws=nginx&os=ubuntubionic)
+3. Use the above link to install certificate using `sudo certbot certonly --nginx -v`
+
 
 ## Other Prerequisite
 
