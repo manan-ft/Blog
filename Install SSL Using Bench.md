@@ -18,6 +18,9 @@
   d. `sudo snap install --classic certbot`
 5. [Install SSL using Bench](https://frappeframework.com/docs/user/en/bench/guides/lets-encrypt-ssl-setup#custom-domains)
   a. `sudo -H bench setup lets-encrypt [site-name] --custom-domain [your-domain.your-website.com]`
+
+#Follow the prompt and complete installation
+
 ''' 
 Running this will stop the nginx service temporarily causing your sites to go offline
 Do you want to continue? [y/N]: y
